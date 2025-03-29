@@ -35,6 +35,7 @@ const Dashboard: React.FC = () => {
           <ul className="space-y-2">
             <li>
               <NavLink
+              onClick={toggleSidebar}
                 to="/dashboard/users"
                 className={({ isActive }) =>
                   `block px-4 py-2 rounded-lg transition ${
