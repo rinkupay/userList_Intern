@@ -105,7 +105,7 @@ const AddAgent = () => {
           <Box sx={{ overflowX: "auto", minWidth: "200px" }}>
             {/* <table className="min-w-full table-auto border-collapse"> */}
             {/* Add responsive table class for mobile */}
-            <table className="min-w-full table-auto border-collapse">
+            <table className="min-w-full table-auto border-collapse horizontal">
               <thead>
                 <tr>
                   <th className="px-4 py-2 text-left">ID</th>

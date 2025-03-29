@@ -1,6 +1,7 @@
 // usersSlice.ts
 import { createSlice, createAsyncThunk, PayloadAction } from '@reduxjs/toolkit';
 import axios from 'axios';
+import toast from 'react-hot-toast';
 
 
 
@@ -38,6 +39,7 @@ export const fetchUsers = createAsyncThunk<UsersApiResponse, number>(
 
       return { data, total, total_pages }; // Return full response data
     } catch (error: any) {
+      toast.error(error.response?.data?.message || 'Failed to fetch users');
       throw new Error(error.response?.data?.message || 'Failed to fetch users');
     }
   }
