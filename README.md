@@ -60,3 +60,11 @@ npm run build
 
 <!-- GIT HUB LINK -->
 https://github.com/rinkupay/userList_Intern
+
+<!-- HOSTED LINK  THIS PROJECT IS HOSTED IN VERCEL.COM-->
+https://user-list-intern.vercel.app/
+
+
+<!-- TO LOGIN USE THESE CREDENTIALS -->
+Email : eve.holt@reqres.in
+ Password : cityslicka
