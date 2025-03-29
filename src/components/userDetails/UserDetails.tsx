@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { TextField, Button, Box, Typography, Avatar, Grid } from '@mui/material';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchSingleUser, selectUserDetails, selectUserError, selectUserLoading, updateUserDetails } from '../../redux/fetchSingleUser/fetchSingleUser'; 
-import { AppDispatch, RootState } from '../../../store'; 
+import { AppDispatch } from '../../../store'; 
 import { useParams } from 'react-router-dom';
 import Loader from '../loader/Loader';
 import ConfirmDialog from '../utils/confirmBox/ConfirmDialog';

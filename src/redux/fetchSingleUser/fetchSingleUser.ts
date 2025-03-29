@@ -107,7 +107,7 @@ const userSlice = createSlice({
         state.loading = true;
         state.error = null;
       })
-      .addCase(deleteUser.fulfilled, (state, action: PayloadAction<number>) => {
+      .addCase(deleteUser.fulfilled, (state ) => {
         state.loading = false;
         state.userDetails = null; // Clear user details from the store after deletion
         toast.success('User deleted successfully!'); // Show success toast

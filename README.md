@@ -1,54 +1,62 @@
-# React + TypeScript + Vite
+User Management App
+A simple user management application built using React, Redux, and TypeScript. This project allows users to view, update, and delete user details. The app also includes authentication with email and password using JWT tokens stored in localStorage for session management.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Features
+User Authentication: Login with email and password.
 
-Currently, two official plugins are available:
+User List: View a list of users.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Update User: Update user details.
 
-## Expanding the ESLint configuration
+Delete User: Remove a user from the list.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+State Management: Uses Redux for managing application state.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+TypeScript: Written in TypeScript for better type safety and development experience.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Prerequisites
+Make sure you have the following installed on your machine:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Node.js (Recommended version: 14.x or higher)
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+npm or Yarn
+
+Getting Started
+Follow these steps to get the project up and running on your local machine.
+
+1. Clone the repository
+bash
+Copy
+git clone https://github.com/yourusername/user-management-app.git
+cd user-management-app
+2. Install dependencies
+Install the required dependencies using npm 
+
+
+npm install
+
+3. Set up the environment
+If your project requires environment variables (e.g., for the API), create a .env file in the root directory and add the necessary variables. Example:
+
+
+REACT_APP_API_URL=https://your-api-url.com
+
+4. Run the development server
+Start the development server by running the following command:
+
+
+npm run dev
+
+This will start the application, and you can access it by navigating to http://localhost:5173/ in your browser.
+
+5. Build the project for production
+If you want to create a production build of the app, run the following command:
+
+
+npm run build
+
+
+
+
+<!-- GIT HUB LINK -->
+https://github.com/rinkupay/userList_Intern

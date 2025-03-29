@@ -18,7 +18,7 @@ import ConfirmDialog from "../utils/confirmBox/ConfirmDialog";
 const AddAgent = () => {
   const dispatch = useDispatch<AppDispatch>();
   const navigate = useNavigate();
-  const { users, loading, error, total, totalPages } = useSelector(
+  const { users, loading, error, totalPages } = useSelector(
     (state: RootState) => state.users
   );
 
